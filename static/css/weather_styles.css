@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: black;
+}
+
+.bold { font-weight: 900; }
+
+.frame {
+    display: flex;
+    flex-direction: row;
+    min-width: 20vw;
+    min-height: 45vh;
+    padding: 20px;
+    /* background: rgba(124, 122, 122, 0.5); */
+    background: linear-gradient(45deg, hsla(217, 100%, 50%, 0.4) 0%, hsla(186, 100%, 69%, 0.4) 100%);
+    border-radius: 35px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.6px);
+    -webkit-backdrop-filter: blur(11.6px);
+}
+
+.ov-items {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    color: white;
+    min-width: 100%;
+    text-align: left;
+}
+
+.ov-weather-icon {
+    margin-top: 25px;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.ov-items hr {
+    width: 100%;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.ov-search-button-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    color: white;
+    text-align: left;
+}
+
+.search-button {
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.search-button img {
+    width: 25px;
+    height: 25px;
+}
+
+.ov-weathercode-container, .ov-location-container, .ov-time-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#ov-temperature {
+    margin: 0;
+    font-size: 55px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#ov-temperature sup {
+    font-size: 30px;
+}
+
+#ov-weathercode { font-size: 15px; }
